@@ -3,6 +3,7 @@
 const { createCanvas, loadImage, registerFont } = require('canvas');
 const fs = require("fs")
 const path = require("path")
+registerFont(path.join(__dirname, '/arial.ttf'), { family: 'Arial' });
 const wait = function (milliseconds) {
     return new Promise((resolve) => {
         if (typeof milliseconds !== 'number') {
