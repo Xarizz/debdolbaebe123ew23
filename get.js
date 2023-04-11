@@ -13,7 +13,7 @@ const wait = function (milliseconds) {
 };
 async function gen_photo(photnum, t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12, t13, t14, t15, t16, t17, ctx) {
     if (photnum == 1) {
-        loadImage('./h1.jpg').then(async image => {
+        loadImage(path.join(__dirname, '/h1.jpg')).then(async image => {
             const canvas = createCanvas(image.width, image.height);
             const ctxs = canvas.getContext('2d');
 
@@ -92,7 +92,7 @@ async function gen_photo(photnum, t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, 
         });
     }
     else if (photnum == 2) {
-        loadImage('./h2.jpg').then(async image => {
+        loadImage(path.join(__dirname, '/h2.jpg')).then(async image => {
             const canvas = createCanvas(image.width, image.height);
             const ctxs = canvas.getContext('2d');
 
@@ -173,7 +173,7 @@ async function gen_photo(photnum, t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, 
         });
     }
     else if (photnum == 3) {
-        loadImage('./h3.jpg').then(async image => {
+        loadImage(path.join(__dirname, '/h3.jpg')).then(async image => {
             const canvas = createCanvas(image.width, image.height);
             const ctxs = canvas.getContext('2d');
 
